@@ -1,6 +1,9 @@
 window.r2glue = window.r2glue || {};
 
 document.addEventListener("DOMContentLoaded", function(event) {
+  new Demo();
+
+  return;
   var frame = document.getElementById("page"),
       testPicker = document.getElementById("testPicker");
 
