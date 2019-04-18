@@ -243,9 +243,8 @@ class Demo {
   }
 
   _updateSrc(url) {
-    const prefix = "src/";
     const frame = this.testFrame;
-    frame.src = prefix + url;
+    frame.src = url;
   }
 
   _injectGlue() {
