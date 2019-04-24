@@ -15,6 +15,7 @@ class Demo {
         if (this.selGlue && this.selGlue.destroy) this.selGlue.destroy();
         if (this.regiGlue && this.regiGlue.destroy) this.regiGlue.destroy();
         if (this.generateCFI && this.generateCFI.destroy) this.generateCFI.destroy();
+        if (this.elementInfo && this.elementInfo.destroy) this.elementInfo.destroy();
 
         this.selGlue = new ReadiumGlue.SelectionHandling(this.testFrame.contentWindow);
         this.keyGlue = new ReadiumGlue.KeyHandling(this.testFrame.contentWindow);
@@ -23,6 +24,7 @@ class Demo {
         this.linkGlue = new ReadiumGlue.LinkHandling(this.testFrame.contentWindow);
         this.generateCFI = new ReadiumGlue.GenerateCFI(this.testFrame.contentWindow);
         this.highlighting = new ReadiumGlue.Highlighting(this.testFrame.contentWindow);
+        this.elementInfo = new ReadiumGlue.ElementInfo(this.testFrame.contentWindow);
     });
 
     this.testPicker.onchange = () => {
